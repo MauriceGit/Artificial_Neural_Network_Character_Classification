@@ -1,0 +1,74 @@
+
+trainingFiles = ["Handschriften-Sommersemester-2015_01.pat", "Handschriften-Sommersemester-2015_02.pat", "TestHandschriften.pat"]
+testFiles     = ["TestWindowsSchrift.pat"] 
+	Input        --> Size = 196 - Count = 416
+	Output       --> Size = 26
+	Testdata     --> Count = 104
+	Hidden Layer --> Count = 2 - Size = 25
+	Parameters   --> Min Error = 0.001 - Max Rounds = 60000 - Alpha = 0.01
+	Methods      --> Epoch Count = 1 - Batch Size = 208
+	Error: 0.225105965847
+	Error: 0.0090125276338
+	correct predicted: 27
+	Time: 4.78080218333 Minuten
+
+trainingFiles = ["Trainingsdaten.pat"]
+testFiles     = ["TestWindowsSchrift.pat"] 
+	Input        --> Size = 196 - Count = 260
+	Output       --> Size = 26
+	Testdata     --> Count = 104
+	Hidden Layer --> Count = 2 - Size = 25
+	Parameters   --> Min Error = 0.001 - Max Rounds = 60000 - Alpha = 0.017
+	Methods      --> Epoch Count = 1 - Batch Size = 260
+	Error: 0.219786243216
+	Error: 0.00329499813964
+	correct predicted: 76  -->  73%
+	Time: 3.08923638333 Minuten
+
+	Input        --> Size = 196 - Count = 260
+	Output       --> Size = 26
+	Testdata     --> Count = 104
+	Hidden Layer --> Count = 2 - Size = 25
+	Parameters   --> Min Error = 0.001 - Max Rounds = 60000 - Alpha = 0.02
+	Methods      --> Epoch Count = 1 - Batch Size = 260
+	Error: 0.219786243216
+	Error: 0.00312001275629
+	correct predicted: 78  -->  75%
+	Time: 3.07411613333 Minuten
+	
+	Input        --> Size = 196 - Count = 260
+	Output       --> Size = 26
+	Testdata     --> Count = 104
+	Hidden Layer --> Count = 2 - Size = 25
+	Parameters   --> Min Error = 0.0005 - Max Rounds = 50000 - Alpha = 0.02
+	Methods      --> Epoch Count = 1 - Batch Size = 260
+	Error: 0.219786243216
+	Error: 0.00344130242518
+	-----> finished because round count was exceeded.
+	correct predicted: 79  -->  75%
+	Time: 2.59819616667 Minuten
+	
+	Input        --> Size = 196 - Count = 260
+	Output       --> Size = 26
+	Testdata     --> Count = 104
+	Hidden Layer --> Count = 2 - Size = 25
+	Parameters   --> Min Error = 0.0005 - Max Rounds = 40000 - Alpha = 0.02
+	Methods      --> Epoch Count = 1 - Batch Size = 260
+	Error: 0.219786243216
+	Error: 0.00385430372388
+	-----> finished because round count was exceeded.
+	correct predicted: 82  -->  78%
+	Time: 2.04615078333 Minuten
+	
+	Input        --> Size = 196 - Count = 260
+	Output       --> Size = 26
+	Testdata     --> Count = 104
+	Hidden Layer --> Count = 2 - Size = 25
+	Parameters   --> Min Error = 0.0005 - Max Rounds = 30000 - Alpha = 0.02
+	Methods      --> Epoch Count = 1 - Batch Size = 260
+	Error: 0.219786243216
+	Error: 0.0046816848406
+	-----> finished because round count was exceeded.
+	correct predicted: 83  -->  79%
+	Time: 1.5414939 Minuten
+

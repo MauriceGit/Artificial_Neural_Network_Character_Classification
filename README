@@ -1,0 +1,19 @@
+Learning und Softcomputing, Sommersemester 2015
+===============================================
+
+Teilnehmer Gruppe 7:
+	- Maurice Tollmien, 101074, maurice.tollmien@gmail.com 
+	- Jens Begemann, 101419, inf101419@fh-wedel.de
+
+=================================================================================================================
+
+Inhalt dieses Verzeichnisses:
+
+./docs      		--> Dokumente (Aufgabenstellung, Ausarbeitung zum Projekt)
+
+./src			--> vollständig übersetzbarer Quellcode incl. Projekt-File 
+			--> Das fertige neuronale Netz und ausführbare Programm liegt in ./src/ANN/ann_Nlayers_Real_Data.py
+
+
+=================================================================================================================
+

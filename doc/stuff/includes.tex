@@ -1,0 +1,146 @@
+% **********************************************
+% Jens Begemann INF 101419
+% inf101419@fh-wedel.de / jensbegemann@posteo.de
+% **********************************************
+
+% ----------------------------------------------
+% Typ des Dokumentes festlegen
+% ----------------------------------------------
+% Bindekorrektur (BCOR), Bib und alle Listen mit im Inhalt (totoc)
+\documentclass[12pt, a4paper, BCOR=5mm, bibliography=totoc, listof=totoc, headsepline, headinclude=false, footinclude=false] {scrreprt}
+
+% Satzspiegel mit KOMA-Skript
+\usepackage[automark]{scrpage2} 
+
+% Deutsche Sprache mit umlauten
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+
+% Schriftart auf Modern setzen für bessre PDF Lesbarkeit
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Kopf und Fußzeilen löschen
+\clearscrheadings
+\clearscrplain
+\clearscrheadfoot
+
+% Automatische Kopfzeile mit Kapitel und Abschnittsnamen
+\automark[section]{chapter}
+
+% Unten rechts Seitenzahl ausgeben
+\ofoot[\pagemark]{\pagemark}
+
+% Kopfzeile nur auf Seiten ohne neuen Kapitelanfang
+\ihead[]{\leftmark}
+\ohead[]{\rightmark}
+
+% Kopfzeile aktivieren
+\pagestyle{scrheadings}
+
+% Anpassung der Schriftgröße der Captions
+\setkomafont{caption}{\small} % kleiner  als die normale Schrift
+\setkomafont{captionlabel}{\usekomafont{caption}}
+
+% Entfernt Einrückung beim Absatz
+%\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+% Groessere Abstand zwischen Absaetzen
+\setlength{\parskip}{1.5ex}
+
+% ----------------------------------------------
+% Konstanten & Befehle
+% ----------------------------------------------
+% Mehr Horizontaler Abstand in Tabellen
+\renewcommand{\arraystretch}{1.2}
+
+% Schusterjungen & Hurenkinder verhindern
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+% Referenzen
+%\newcommand{\imgref}[1]{(Abbildung~\ref{#1},~S.~\pageref{#1})}
+%\newcommand{\tabref}[1]{(Tabelle~\ref{#1},~S.~\pageref{#1})}
+\newcommand{\imgref}[1]{(Abbildung~\ref{#1})}
+\newcommand{\tabref}[1]{(Tabelle~\ref{#1})}
+\newcommand{\lstref}[1]{(Listing~\ref{#1})}
+\newcommand{\chapref}[1]{(Kapitel~\ref{#1})}
+\newcommand{\appref}[1]{(Anhang~\ref{#1})}
+
+% ----------------------------------------------
+% Grafiken, Bilder, Tabellen, etc..
+% Grafikpaket einbinden um Bilder zu implementieren
+% ----------------------------------------------
+\usepackage{microtype}       			% optischer Randausgleich, falls pdflatex verwandt
+\usepackage{graphicx}					% Grafiken in pdfLaTeX
+\DeclareGraphicsExtensions{.pdf,.bmp,.png,.mps} 
+\usepackage{pdfpages}					% PDF Dateien einbinden
+\usepackage[printonlyused]{acronym} 	% list of acronyms and abbreviations
+\usepackage{multicol}               	% Mehrspaltige Bereiche
+\usepackage{setspace}					% Setzen des Zeilenabstandes
+\usepackage{lscape}						% Setzen des Zeilenabstandes
+\usepackage[disable]{todonotes}					% todo Notes und missingfigures
+\usepackage{textcomp}         			% Symbole (wie griechisches Alphabet)
+\usepackage{epstopdf}
+\usepackage{amssymb}					% Mathesymbole
+\usepackage{amsmath}                
+\usepackage{engtlc}                     % Kbit\s in Si Schreibweise usw...
+\usepackage{longtable}
+\usepackage{multirow}                   % Zusammengefasste Tabellen Spalten
+\usepackage{url}
+\usepackage{siunitx}                    % Maßeinheiten fuer SI system
+\usepackage[nostamp]{draftwatermark} %nostamp             % Wasserzeichen
+\SetWatermarkScale{0.8}
+\SetWatermarkLightness{0.9}
+\SetWatermarkText{draft}
+
+\usepackage{hyperref}                    % Verlinkung im PDF für Kapitel etc.
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%\hypersetup{linktocpage}
+
+
+% ----------------------------------------------
+% Codedarstellung mit Syntaxhighlighting
+% ----------------------------------------------
+\usepackage{xcolor}					% Farbe fuer Syntaxhervorhebung
+\usepackage{listings}				% Quellcode darstellung
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset {
+	language = C,
+	tabsize = 2,
+	frame = single,
+	backgroundcolor = \color{white},
+	numbers = left,
+	numberstyle = \color{gray},
+	numberblanklines = false,
+	commentstyle=\color{dkgreen},
+	identifierstyle = \color{black},
+	stringstyle=\color{mauve},
+ 	basicstyle = \ttfamily \color{black} \scriptsize,
+ 	keywordstyle=\bf\color{blue},
+ 	%inputencoding = utf8/latin1,
+ 	showstringspaces = false,
+ 	%xleftmargin = \parindent,
+ 	xleftmargin = 5ex,
+ 	captionpos = t,
+}
+
+% ----------------------------------------------
+% Hacks ...
+% ----------------------------------------------
+
+
+
+% ----------------------------------------------
+% EOF
+% ----------------------------------------------

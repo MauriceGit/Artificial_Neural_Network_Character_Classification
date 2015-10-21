@@ -1,0 +1,49 @@
+\input{stuff/includes}
+
+\begin{document}
+	\pagenumbering{Roman}
+	
+	\begin{spacing}{1}
+	
+	\input{chapters/titelseite}
+	%\input{chapters/sperrvermerk}
+	%\input{chapters/abstract}
+	
+	% Inhaltsverzeichnis im PDF verlinkbar machen
+	\pdfbookmark[0]{Inhaltsverzeichnis}{toc_label}
+	\tableofcontents
+
+ 	\listoftodos	
+	
+	%\cleardoublepage
+	
+	%\input{stuff/acronyms}
+	
+	\newpage
+		
+	\end{spacing}
+	
+	\pagenumbering{arabic}
+	\onehalfspacing
+	
+	\input{chapters/einleitung}	
+	\input{chapters/zielsetzung}
+	\input{chapters/aufbereitung}
+	\input{chapters/aufbau}
+	%\input{chapters/gradient}
+	\input{chapters/ergebniss}
+	\input{chapters/ausblick}  
+
+	\listoffigures
+	%\listoftables
+	\renewcommand{\lstlistlistingname}{Listingverzeichnis}
+	\lstlistoflistings
+		
+%	\input{chapters/anhang}
+	
+	%\bibliographystyle{ieeetr}
+	%\bibliography{stuff/bibliography}
+	
+    %\input{chapters/disclaimer}
+
+\end{document}
