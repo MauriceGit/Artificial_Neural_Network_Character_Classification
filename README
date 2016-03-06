@@ -2,22 +2,22 @@ Learning und Softcomputing Project
 ==================================
 
 Project participants:
-	- Maurice Tollmien, maurice.tollmien@gmail.com 
-	- Jens Begemann, inf101419@fh-wedel.de
+    - Maurice Tollmien, maurice.tollmien@gmail.com
+    - Jens Begemann, inf101419@fh-wedel.de
 
 ==================================
 
 This project is about implementing and creating a neural network with the ability to classify characters.
 The implementation is in Python and uses no external resources or libraries except numpy.
-The final results are competitive with existing frameworks, such as Pybrain or others.
+The final results are competitive to existing frameworks, such as Pybrain or others.
 
-./docs	--> All documents regarding the task and boundary conditions.
+./docs  --> All documents regarding the task and boundary conditions.
 
-./src	--> Complete sourcecode for this project.
-	--> Artificial neural network with backpropation: ./src/ANN/ann_Nlayers_Real_Data.py
-	--> You can test or run the program by just calling it with python!
-		cd ./src/ANN/
-		python ann_Nlayers_Real_Data.py
+./src   --> Complete sourcecode for this project.
+    --> Artificial neural network with backpropation: ./src/ANN/ann_Nlayers_Real_Data.py
+    --> You can test or run the program by just calling it with python!
+        cd ./src/ANN/
+        python ann_Nlayers_Real_Data.py
 
 
 ==================================
