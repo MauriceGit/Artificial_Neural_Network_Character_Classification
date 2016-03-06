@@ -14,8 +14,8 @@ The final results are competitive to existing frameworks, such as Pybrain or oth
 ./docs  --> All documents regarding the task and boundary conditions.
 
 ./src   --> Complete sourcecode for this project.
-    --> Artificial neural network with backpropation: ./src/ANN/ann_Nlayers_Real_Data.py
-    --> You can test or run the program by just calling it with python!
+        --> Artificial neural network with backpropation: ./src/ANN/ann_Nlayers_Real_Data.py
+        --> You can test or run the program by just calling it with python!
         cd ./src/ANN/
         python ann_Nlayers_Real_Data.py
 
